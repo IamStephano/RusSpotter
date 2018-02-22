@@ -8,7 +8,15 @@ var placingMarker;
 
 var map;
 var newMarker;
+var userMarker;
 var markersArray = [];
+
+var icon = {
+    url: "img/user.png", // url
+    scaledSize: new google.maps.Size(16, 16), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(8, 8) // anchor
+};
 
 document.addEventListener('DOMContentLoaded', function() {
   initialize();
@@ -30,6 +38,13 @@ function initialize() {
             };
 
             map.setCenter(pos);
+			userMarker = new google.maps.Marker({
+					map: map,
+              		position: pos,
+              		icon: icon,
+            	});
+			  
+			  
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
           });
@@ -207,6 +222,31 @@ function updateMarkers() {
 		}
       
 	});
+}
+
+function centerMapOnLocation() {
+	if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+			  
+			userMarker.setMap(null);
+			userMarker = new google.maps.Marker({
+					map: map,
+              		position: pos,
+              		icon: icon,
+            	});
+
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
 }
 
 window.setInterval(function(){

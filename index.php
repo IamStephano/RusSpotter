@@ -85,6 +85,7 @@ $sql = mysqli_query( $connection, "DELETE FROM rusmap WHERE (time < NOW() - INTE
 			<div id="map" style="overflow:visible"></div>
 			<a href="#" onclick="addOrSaveMarker(this)"><div id="spotted-button"><i class="fa fa-male" style="line-height:100px"></i></div></a>
 			<a href="#" onclick="updateMarkers()"><div id="refresh-button"><i class="fa fa-sync-alt" style="line-height:50px"></i></div></a>
+			<a href="#" onclick="centerMapOnLocation()"><div id="recenter-button"><i class="fa fa-location-arrow" style="line-height:50px"></i></div></a>
 		</div>
 	</div>
 </div>
