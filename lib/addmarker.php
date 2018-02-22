@@ -5,7 +5,7 @@ $long = $_POST['longitude'];
 $desc = 'rus';
 
 // Opens a connection to a MySQL server
-$connection=mysqli_connect('127.0.0.1', $username, $password);
+$connection=mysqli_connect($server, $username, $password);
 if (!$connection) {
   die('Not connected : ' . mysqli_error($connection));
 }
