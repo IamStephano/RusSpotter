@@ -1,7 +1,7 @@
 # RusSpotter
 
 ## About
-RusSpotter is a mobile web app, created for the student magazine http://madsfjoek.dk
+RusSpotter is a mobile web app, created for the student magazine http://madsfoek.dk
 It's developed in PHP and Javascript.
 
 Created by:
