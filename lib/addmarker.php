@@ -1,5 +1,5 @@
 <?php
-require("lib/db.php");
+require("db.php");
 $lat = $_POST['latitude'];
 $long = $_POST['longitude'];
 $desc = 'rus';

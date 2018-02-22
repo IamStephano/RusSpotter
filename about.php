@@ -42,7 +42,7 @@
 
 			<ul class="sidebar-navigation">
 				<li><a href="index.php"><i class="fa fa-map"></i>Kort<i class="fa fa-circle"></i></a></li>
-				<li><a href="http://madsfoek.dk"><i class="fa fa-book"></i>Mads Føk<i class="fa fa-circle"></i></a></li>
+				<li><a href="https://madsfoek.dk"><i class="fa fa-book"></i>Mads Føk<i class="fa fa-circle"></i></a></li>
 				<li><a href="about.php"><i class="fa fa-info"></i>Om Siden<i class="fa fa-circle"></i></a></li>
 			</ul>
 			<div class="sidebar-divider">
