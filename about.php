@@ -9,6 +9,13 @@
 
 <title>RusSpotter v1.0</title>
 
+<!-- load the loading page stuff first-->
+<script type="text/javacsript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script data-pace-options="{ restartOnPushState: false};" src="js/pace.min.js"></script>
+<link href="css/loading-bar.css" rel="stylesheet" />
+
+	
+<!-- Then the rest-->
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/framework.css" rel="stylesheet" type="text/css">
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -18,7 +25,6 @@
 <script type="text/javascript" src="scripts/jqueryui.js"></script>
 <script type="text/javascript" src="scripts/framework.plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
-<script type="text/javacsript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.min.js"></script>
 	
 

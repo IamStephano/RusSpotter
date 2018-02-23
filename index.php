@@ -33,7 +33,18 @@ $sql = mysqli_query( $connection, "DELETE FROM rusmap WHERE (time < NOW() - INTE
 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="images/splash/splash-icon-big.png">
 
 <title>RusSpotter v1.0</title>
+	
+<!-- load the loading page stuff first-->
+<script type="text/javacsript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" data-pace-options='{ "ajax": false }' src="js/pace.min.js"></script>
+<script>
+	
+</script>
+	
+<link href="css/loading-bar.css" rel="stylesheet" />
 
+	
+<!-- Then the rest-->
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <link href="css/framework.css" rel="stylesheet" type="text/css">
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -46,16 +57,20 @@ $sql = mysqli_query( $connection, "DELETE FROM rusmap WHERE (time < NOW() - INTE
 <script type="text/javascript" src="js/framework.plugins.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/MainMap.js"></script>
-<script type="text/javacsript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
+	
+
 	
 
 </head>
 
-<?php
+<body>
+
+<div class="all-elements">
+	<?php
 	require('header.php');	
 ?>
-<div class="all-elements">
 	<div class="snap-drawers">
 				<div class="snap-drawer snap-drawer-left">
 					<div class="sidebar-header" style="overflow:hidden;">

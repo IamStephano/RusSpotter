@@ -191,6 +191,7 @@ function clearMarkers() {
 }
 
 function updateMarkers() {
+	document.getElementById("refresh-button").firstChild.classList.add('fa-spin');
 	clearMarkers();
 	
 	downloadUrl("lib/generatexml.php", function(data) {
@@ -222,6 +223,13 @@ function updateMarkers() {
 		}
       
 	});
+	
+	
+	//Short delay to make sure users on fast connections gets feedback on input
+	setTimeout(function(){
+    	document.getElementById("refresh-button").firstChild.classList.remove('fa-spin');
+	}, 2000);
+	
 }
 
 function centerMapOnLocation() {
